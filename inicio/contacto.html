@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Punto Seguro</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+
+  <header>
+   <div class="logo-container">
+	    <img src="../img/logo.jpg" alt="Logo Punto Seguro" class="logo">
+	    <h1>Punto Seguro - Portal de Ciberseguridad</h1>
+   </div>
+    <nav class="centrar">
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="test.html">Test</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas, sugerencias o necesitas más información? Rellena el formulario y te responderemos pronto.</p>
+
+      <!-- IMPORTANTE: Añadimos el ID al formulario -->
+      <form id="formContacto" action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <!-- Este párrafo aparecerá al enviar -->
+      <p id="mensajeConfirmacion" style="display: none; color: green; font-weight: bold; margin-top: 15px;">
+        ¡Tu mensaje ha sido enviado con éxito!
+      </p>
+    </section>
+  </main>
+
+  <!-- Aquí va el script justo antes del cierre del body -->
+  <script>src="../js/contacto.js"</script>
+<footer class="footer">
+  <div class="footer-contenido">
+    <p>&copy; 2025 Punto Seguro. Todos los derechos reservados.</p>
+    <p>
+      <a href="contacto.html">Contacto</a> | 
+      <a href="consejos.html">Consejos</a> |
+      <a href="https://www.incibe.es/" target="_blank">INCIBE</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+
+

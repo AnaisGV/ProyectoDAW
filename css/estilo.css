@@ -1,0 +1,449 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/*LOGO*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espacio entre logo y texto */
+  justify-content: left; /* centra horizontalmente */
+}
+
+.logo {
+  width: 60px; /* ajusta según mi diseño */
+  height: auto;
+}
+
+/*CENTRAR MENU*/
+.centrar {
+  color: black;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente (si es necesario) */
+  font-size: 1.0em;
+}
+
+.centrar ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;    /* Coloca los elementos en línea */
+}
+
+.centrar li {
+  margin: 0 10px;   /* Añade espacio entre los elementos */
+}
+
+.centrar a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: black;          /* Cambia el color del texto (puedes personalizarlo) */
+}
+	
+/*PAGINA DE TEST*/
+.contenedor-tests {
+ 
+  background: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.lista-tests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-test {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card-test:hover {
+  transform: scale(1.03);
+}
+
+.card-test img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-test h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card-test p {
+  padding: 0 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.btn-test {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-test:hover {
+  background-color: #2980b9;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.boton-volver:hover {
+  background-color: #005f99;
+}
+
+/* CADA TEST */
+.test-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Título del test */
+.test-container h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Pregunta */
+.pregunta {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+}
+
+/* Opciones del test */
+.opciones button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em;
+  
+}
+
+.opciones button:hover {
+  background-color: #d0d0d0;
+}
+
+/* Botón siguiente */
+.boton-siguiente {
+  display: block;
+  margin: 25px auto;
+  padding: 10px 25px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  
+}
+
+.boton-siguiente:hover {
+  background-color: #005fa3;
+}
+
+/* Botones de navegación */
+nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.boton-volver:hover {
+  background-color: #005fa3;
+}
+
+/* PAGINA DE INICIO */
+.inicio {
+  background-image: url('../img/test1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.bienvenida h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.botones-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.boton-inicio {
+  background-color: #3498db;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+  background-color: #0080ff;
+
+}
+
+/*PAGINA DE CONTACTO*/
+.form-contacto {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.form-contacto h2 {
+  text-align: center;
+  color: #007acc;
+}
+
+.form-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-contacto button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-contacto button:hover {
+  background-color: #005f99;
+}
+
+/*PAGINA DE CONSEJOS*/
+.consejos {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;	
+  color: #333;
+  text-align: center;
+}
+
+.intro {
+
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.carrusel-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 170px;
+  justify-content: center;
+  
+   
+}
+
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide h3 {
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+.slide p {
+  color: black;
+  font-size: 0.95em;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: all;
+}
+
+.controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 0 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*PIE DE PAGINA*/
+.footer {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-contenido {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+/* PRUEBA */
+.main {
+  flex: 1;
+}

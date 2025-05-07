@@ -59,7 +59,7 @@ function verificarRespuesta(opcionSeleccionada, boton) {
   document.getElementById("resultado").textContent = `Respuesta registrada. Pulsa "Siguiente".`;
   respondida = true;
 
-  // Opcional: desactivar botones para evitar varias respuestas
+  // desactiva el boton para evitar varias respuestas
   const botones = document.querySelectorAll("#opciones button");
   botones.forEach(b => {
     b.disabled = true;

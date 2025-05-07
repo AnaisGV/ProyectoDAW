@@ -48,7 +48,7 @@ nav a {
   color: black;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
-  align-items: center;    /* Centra verticalmente (si es necesario) */
+  align-items: center;    /* Centra verticalmente */
   font-size: 1.0em;
 }
 
@@ -65,7 +65,7 @@ nav a {
 
 .centrar a {
   text-decoration: none; /* Elimina el subrayado */
-  color: black;          /* Cambia el color del texto (puedes personalizarlo) */
+  color: black;          /* Cambia el color del texto */
 }
 	
 /*PAGINA DE TEST*/
